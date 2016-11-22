@@ -18,8 +18,6 @@ class SG_iCal_VTimeZone {
 	 * Constructs a new SG_iCal_VTimeZone
 	 */
 	public function __construct( $data ) {
-		require_once dirname(__FILE__).'/../helpers/SG_iCal_Freq.php'; // BUILD: Remove line
-
 		$this->tzid = $data['tzid'];
 		$this->daylight = $data['daylight'];
 		$this->standard = $data['standard'];
